@@ -1,0 +1,150 @@
+#section5 {
+    font-family: 'Montserrat', sans-serif !important;
+    background-image: url(../images/video-bg.jpg);
+    padding: 10% 0;
+    background-size: cover;
+    .content-section5 {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        .text-section5 {
+            width: 45%;
+            color: #fff;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            h6 {
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                letter-spacing: 0.5px;
+                align-self: flex-start;
+            }
+            h4 {
+                font-size: 3rem;
+                color: #fff;
+                font-weight: 800;
+                letter-spacing: 0.5px;
+                line-height: 40px;
+                span {
+                    color: #f5a425;
+                }
+            }
+            p {
+                font-size: 13px;
+                line-height: 22px;
+                span {
+                    color: #3cf;
+                    &:hover {
+                        color: #f5a425;
+                    }
+                }
+            }
+            button {
+                background-color: #f5a425;
+                color: #fff;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                padding: 12px 20px;
+                display: inline-block;
+                outline: none;
+                margin-bottom: 5%;
+            }
+        }
+        .video-section5 {
+            width: 45%;
+            position: relative;
+            min-height: 500px;
+
+            img {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+            .infor-img {
+                span {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    position: absolute;
+                    background: rgba(250, 250, 250, 0.75);
+                    bottom: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 13%;
+                    i.fas.fa-play-circle {
+                        font-size: 4rem;
+                        &:before {
+                            color: #f5a425;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // REPONSIVE
+    @media screen and (max-width: 1063px) and (min-width: 748px) {
+        .content-section5 {
+            .video-section5 .infor-img span {
+                height: 8%;
+            }
+            .text-section5 h4 {
+                letter-spacing: 0;
+                font-size: 2.3rem;
+            }
+        }
+    }
+    @media screen and (max-width: 954px) and (min-width: 748px) {
+        .content-section5 .text-section5 .button-section5 {
+            padding: 0;
+            font-size: 1.3rem;
+        }
+    }
+    @media screen and( max-width:854px) and (min-width: 748px) {
+        .content-section5 .text-section5 {
+            justify-content: flex-end;
+        }
+        .content-section5 .video-section5 .infor-img span {
+            font-size: 1rem;
+        }
+    }
+    @media screen and (max-width: 747px) {
+        .content-section5 {
+            flex-direction: column;
+            .text-section5 {
+                width: 100%;
+            }
+            .video-section5 {
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 475px) {
+        .content-section5 .text-section5 .button-section5 {
+            padding: 0;
+            font-size: 1rem;
+        }
+        .content-section5 .text-section5 h4 {
+            font-size: 2rem;
+            line-height: 20px;
+        }
+        .content-section5 .text-section5 p {
+            font-size: 1rem;
+        }
+        .content-section5 .video-section5 img {
+            bottom: 27%;
+        }
+        .content-section5 .video-section5 .infor-img span {
+            font-size: 1.2rem;
+            height: 7%;
+            bottom: 27%;
+        }
+    }
+}

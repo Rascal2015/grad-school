@@ -1,0 +1,23 @@
+#footer {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgba(22, 34, 57, 0.95);
+    font-family: 'Montserrat', sans-serif !important;
+    h6{
+        color: #fff;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        span{
+            color:#f5a425;
+        }
+    }
+    // REPONSIVE
+    @media screen and(max-width:463px) {
+       h6{
+            font-size: 0.8rem;
+        }
+    }
+}

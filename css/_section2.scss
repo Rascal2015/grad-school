@@ -1,0 +1,162 @@
+#section2 {
+    font-family: 'Montserrat', sans-serif !important;
+    background-image: url(../images/choosing-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    .content-section2 {
+        width: 85%;
+        margin: 0 auto;
+        .title {
+            text-align: center;
+            width: 30%;
+            padding-top: 7%;
+            margin: auto;
+            display: block;
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff;
+                letter-spacing: 0.5px;
+
+                padding: 15px 20px;
+                border: 2px solid rgba(250, 250, 250, 0.1);
+                position: relative;
+                &:before {
+                    content: "";
+                    background: rgba(250, 250, 250, 0.1);
+                    width: 2px;
+                    height: 100px;
+                    position: absolute;
+                    bottom: 100%;
+                    left: 50%;
+                }
+            }
+        }
+        .buttons {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 7%;
+            padding-bottom: 30px;
+            color: #fff;
+
+            text-transform: uppercase;
+            justify-content: space-around;
+            .icon1.active-icon {
+                color: #f5a425;
+                i {
+                    font-size: 1.8rem;
+                    border: solid #f5a425 3px;
+                    padding: 0.5rem;
+                }
+            }
+        }
+        .main-content-section2 {
+            // position: relative;
+            // height: 500px;
+            .tabs-section2 {
+                display: flex;
+                flex-direction: row;
+                color: white;
+                align-items: center;
+                // position: absolute;
+                // opacity: 0;
+                // visibility: hidden;
+                // display: none;
+                justify-content: space-between;
+                margin-top: 5%;
+                img {
+                    width: 45%;
+                }
+                .content-tabs-section2 {
+                    width: 45%;
+                    h2 {
+                        margin-top: 6rem;
+                        font-size: 3.2rem;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        color: #fff;
+                        margin-bottom: 3rem;
+                    }
+                    p {
+                        color: #fff;
+                        font-size: 1.7rem;
+                        line-height: 28px;
+                        span {
+                            color: #3cf;
+                            &:hover {
+                                color: #f5a425;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // .tabs-section2.magical {
+            //     opacity: 1;
+            //     visibility: visible;
+            // }
+        }
+    }
+    // ADDCLASS
+    // .magical {
+    //     opacity: 1;
+    // }
+    .active-icon {
+        color: #f5a425;
+        i {
+            font-size: 1.8rem;
+            border: solid #f5a425 3px;
+            padding: 0.5rem;
+        }
+    }
+    // REPONSIVE
+    @media screen and(max-width: 1074px) {
+        .content-section2 .title {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 649px) {
+        .content-section2 {
+            margin-bottom: 10%;
+        }
+        .content-section2 .title {
+            width: 100%;
+        }
+        .content-section2 .buttons {
+            h4 {
+                font-size: 1rem;
+            }
+        }
+        .content-section2 .main-content-section2 .tabs-section2 {
+            flex-direction: column;
+            img {
+                width: 70%;
+            }
+            .content-tabs-section2 {
+                width: 100%;
+                padding-bottom: 30px;
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 335px) {
+        .content-section2 .title h3{
+            font-size:1.3rem;
+        }
+        .content-section2 .main-content-section2 .tabs-section2 .content-tabs-section2 {
+            h2 {
+                font-size: 2.7rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

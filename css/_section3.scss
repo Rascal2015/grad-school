@@ -1,0 +1,204 @@
+#section3 {
+    font-family: 'Montserrat', sans-serif !important;
+    position: relative;
+    background-image: url(../images/coming-soon-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content-section3 {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        .timelive {
+            width: 55%;
+            // margin-top: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .text-timelive {
+                p {
+                    font-size: 3rem;
+                    color: #fff;
+                    font-weight: 800;
+                    letter-spacing: 0.5px;
+                    line-height: 40px;
+                    margin-bottom: 5%;
+                    span {
+                        color: #f5a425;
+                    }
+                }
+            }
+            #countdown {
+                // width: 465px;
+                // height: 112px;
+                text-align: center;
+                // margin: auto;
+                padding: 24px 0;
+                z-index: 2222;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+            #countdown #tiles {
+                width: 100%;
+                z-index: 1;
+            }
+            #countdown #tiles > span {
+                width: 20%;
+                font: bold 4.8rem "Droid Sans", Arial, sans-serif;
+                text-align: center;
+                color: white;
+                padding: 2rem 0;
+                margin: 0 1rem;
+                display: inline-block;
+                background-color: rgba(250, 250, 250, 0.2);
+                @media screen and(max-width:936px) and(min-width:703px) {
+                    font: bold 2.8rem "Droid Sans", Arial, sans-serif;
+                    width: 10%;
+                    padding: 0rem 0;
+                }
+                @media screen and(max-width:519px) {
+                    font: bold 2.8rem "Droid Sans", Arial, sans-serif;
+                    width: 10%;
+                    padding: 0rem 0;
+                }
+                @media screen and(max-width:372px) {
+                    padding-right: 35px !important;
+                }
+            }
+            #countdown .labels {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+            #countdown .labels li {
+                width: 20%;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                color: #f5a425;
+                font-weight: 500;
+                letter-spacing: 1px;
+                margin: 1rem;
+                display: block;
+                display: inline-block;
+                z-index: 444;
+                @media screen and(max-width:936px) and(min-width:703px) {
+                    width: 10%;
+                    font-size: 0.8rem;
+                    padding: 0rem 0;
+                }
+                @media screen and(max-width:519px) {
+                    width: 10%;
+                    font-size: 0.8rem;
+                    padding: 0rem 0;
+                }
+                @media screen and(max-width:372px) {
+                    padding-right: 35px !important;
+                }
+            }
+        }
+
+        .infor {
+            width: 40%;
+            margin-top: 10%;
+           background-color: rgba(250,250,250,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10%;
+            p {
+                font-size: 1.5rem;
+                color: #fff;
+                background-color: rgba(250, 250, 250, 0.2);
+                padding: 9%;
+                text-align: center;
+                line-height: 24px;
+            }
+            form {
+                width: 82%;
+                margin: auto;
+                margin-top: 20%;
+               // background-color: rgba(250,250,250,0.1);
+                .form-group {
+                    margin-bottom: 3rem;
+                }
+                .form-control {
+                    font-size: 2rem;
+                    // color:white !important;
+                }
+              
+            }
+            button {
+                background-color: #f5a425;
+                color: #fff;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                padding: 12px 20px;
+                display: inline-block;
+                outline: none;
+                margin-bottom: 5%;
+                align-self: center;
+            }
+        }
+    }
+    // REPONSIVE
+    @media screen and(max-width:936px) and(min-width:703px) {
+        .content-section3 .timelive .text-timelive p {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .content-section3 .infor {
+            p {
+                font-size: 1.2rem;
+            }
+            form {
+                margin-top: 10%;
+            }
+            form .form-control {
+                font-size: 1rem;
+            }
+            button {
+                font-size: 1rem;
+                padding: 0 0;
+            }
+        }
+    }
+    @media screen and(max-width:979px) {
+        .content-section3 .timelive .text-timelive p {
+            text-align: center;
+        }
+    }
+    @media screen and(max-width:703px) {
+        .content-section3 {
+            flex-direction: column;
+            .timelive {
+                width: 100%;
+            }
+            .infor {
+                width: 100%;
+            }
+        }
+    }
+    @media screen and(max-width:598px) {
+        .content-section3 .timelive .text-timelive p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+
+    @media screen and(max-width:415px) {
+        .content-section3 .infor {
+            form .form-control {
+                font-size: 1rem;
+            }
+            button {
+                padding: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

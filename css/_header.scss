@@ -1,0 +1,120 @@
+#header {font-family: 'Montserrat', sans-serif !important;
+    nav {
+        display: flex;
+        background-color: rgba(22, 34, 57, 0.95);
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        // position:fixed;
+        z-index: 9999999999999999999999999999;
+        top:0;
+        // max-width: 1280px;
+        margin:0 auto;
+        label.logo {
+            padding-left: 3rem;
+            a {
+                font-size: 3.6rem;
+                text-decoration: none;
+                font-weight: 800;
+                text-transform: uppercase;
+                color: white;
+
+                span {
+                    color: #f5a425;
+                }
+            }
+        }
+        ul {
+            display: flex;
+            flex: 1;
+            margin: 0;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 3rem;
+            li {
+                @media screen and(max-width: 960px) {
+                    margin: 0;
+                }
+            }
+            li a {
+                color: white;
+                color: #fff;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+
+                &:hover {
+                    border: solid #f5a425 2px;
+                }
+            }
+        }
+    }
+    nav .dropdown-menu.show {
+        background: rgba(22, 34, 57, 0.95);
+        a.dropdown-item:hover {
+            background-color: rgba(22, 34, 57, 0.95);
+        }
+    }
+    nav label.checkbtn {
+        font-size: 30px;
+        color: #f5a425;
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+    input#check {
+        display: none;
+    }
+    // REPONSIVE
+    @media screen and(max-width: 769px) {
+        nav {
+            flex-direction: column;
+
+            ul {
+                flex-direction: column;
+                display: flex;
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                justify-content: flex-start;
+                background-color: rgba(22, 34, 57, 0.95);
+                left: -100%;
+                transition: all 0.5s;
+                z-index: 9999999999999999999999999;
+                align-items: center;
+                li {
+                    margin: 2rem;
+                    padding: 1;
+                    a {
+                        padding: 1rem 5rem;
+                    }
+                }
+            }
+        }
+
+        nav label.checkbtn {
+            display: block;
+        }
+        #check:checked ~ ul {
+            left: 0;
+        }
+    }
+   @media screen and(max-width: 375px){
+       nav label.logo {
+
+            padding-left: 0px;
+            margin-left: -32px;
+        }
+    }
+    .remove-menu{
+        left:-100%;
+        opacity: 0;
+         transition: all 0.5s;
+    }
+
+}

@@ -1,0 +1,175 @@
+#section1 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif !important;
+    #myVideo {
+        min-width: 100%;
+        min-height: 100vh;
+        max-width: 100%;
+        max-height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .content-section1 {
+        position: absolute;
+        background-color: rgba(22, 34, 57, 0.85);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+
+        .text-section1 {
+            position: absolute;
+            z-index: 6;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            p {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: white;
+                margin-bottom: 5%;
+            }
+            h1 {
+                font-size: 6.4rem;
+                text-transform: uppercase;
+                font-weight: 800;
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 5%;
+
+                span {
+                    color: #f5a425;
+                }
+            }
+            button {
+                background-color: #f5a425;
+                color: #fff;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                padding: 12px 20px;
+                display: inline-block;
+                outline: none;
+                margin-bottom: 5%;
+            }
+        }
+        .cards-section1 {
+            // overflow:hidden;
+            z-index: 999;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            display: flex;
+            width: 85%;
+            justify-content: space-between;
+            .card-body{
+                position: absolute;
+                bottom:0;
+                width:100%;
+                padding: 0;
+                &.active{
+                    h5,.hidden-cards{
+                        background-color: #f5a425 !important;
+                    }
+                }
+                @media screen and(max-width:768px) {
+                    position: relative;
+                }
+            }
+            .card {
+                color: white;
+                width: 30%;
+                border:none;
+                // transform:translateY(100%);
+                background-color: rgba(22, 34, 57, 0.95);
+                // top:-70px;
+                position: relative;
+                &:hover {
+                    background-color: #f5a425 !important;
+                    // transform:translateY(70px);
+                    // transition: 0.5s;
+                    //  .hidden-cards{
+                    //     height:auto;
+                    //  }
+                    h5,.hidden-cards{
+                        background-color: #f5a425 !important;
+                    }
+                }
+                h5 {
+                    background-color: rgba(22, 34, 57, 0.95);
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #fff;
+                    letter-spacing: 1px;
+                    margin-bottom: 0px;
+                    padding: 2rem 0;
+                    text-align: center;
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .hidden-cards {
+                padding:1.5rem;
+                font-size: 1.3rem;
+                line-height: 22px;
+                display: none;
+            }
+        }
+    }
+
+    // REPONSIVE
+    @media screen and(max-width: 769px) {
+       .content-section1 .text-section1{
+        top:30%;
+
+         }
+        .cards-section1 {
+            flex-direction: column;
+            width:100% !important;
+ 
+            .card {
+                width: 100% !important;
+            }
+        }
+    }
+    @media screen and(max-width:600px){
+        .content-section1 .text-section1{
+            top:17%;
+            p{
+                font-size:1.3rem;
+            }
+            h1{
+                font-size:2.4rem;
+            }
+            button{
+                padding:0;
+                font-size:1.2rem;
+
+            }
+
+        }
+        .content-section1 .cards-section1 .card{
+            h5{
+                padding:0.5rem 0;
+            }
+        }
+    }
+    @media screen and(max-width:375px){
+      .content-section1 .cards-section1 .card{
+        h5{
+            font-size:1rem;
+            padding:0;
+        }
+      }
+
+    }
+}

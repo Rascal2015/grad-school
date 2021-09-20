@@ -1,0 +1,94 @@
+#section6 {
+    font-family: 'Montserrat', sans-serif !important;
+    background-image: url(../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 2rem;
+    h3 {
+        margin-top: 100px;
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 0.5px;
+        display: inline-block;
+        padding: 15px 20px;
+        border: 2px solid rgba(250, 250, 250, 0.1);
+        text-align: center;
+        margin-bottom: 10%;
+        &:before {
+            content: "";
+            background: rgba(250, 250, 250, 0.1);
+            width: 2px;
+            height: 100px;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+        }
+    }
+    .content-section6 {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        form {
+            color: white;
+            width: 45%;
+            background-color: rgba(250, 250, 250, 0.1);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        form {
+            .form-control {
+                margin-bottom: 3rem;
+                font-size: 2rem;
+            }
+            button {
+                background-color: #f5a425;
+
+                color: #fff;
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                padding: 12px 20px;
+                display: inline-block;
+                outline: none;
+
+                align-self: center;
+            }
+        }
+        iframe {
+            width: 45%;
+        }
+        // REPONSIVE
+        @media screen and (max-width: 951px) {
+            form .form-control {
+                font-size: 1.3rem;
+            }
+            form button {
+                font-size: 1rem;
+                padding: 0 0;
+            }
+        }
+        @media screen and(max-width:679px) {
+            flex-direction: column;
+            form {
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+            iframe {
+                width: 100%;
+            }
+        }
+        @media screen and(max-width:380px) {
+            form .form-control {
+                font-size: 1rem;
+            }
+        }
+    }
+}
